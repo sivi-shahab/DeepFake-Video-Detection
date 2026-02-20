@@ -1,0 +1,27 @@
+Django==4.2.7
+djangorestframework==3.14.0
+
+# CORS & Environment
+django-cors-headers==4.3.1
+python-decouple==3.8
+
+# Task Queue
+celery==5.3.4
+redis==5.0.1
+
+# Computer Vision & ML (ARM-Compatible)
+opencv-python-headless==4.8.1.78  # Use headless version for ARM
+mediapipe==0.10.13
+# PyTorch for ARM: Use command from pytorch.org, NOT this line. See Step 3 below.
+# numpy==1.24.3 (Install via pip after setting env var)
+Pillow==10.1.0
+
+# Web Server (Production)
+gunicorn==21.2.0
+# Note: If using whitenoise with ddtrace, version 2.2.0+ may cause issues[citation:3].
+whitenoise==6.6.0
+
+# Testing
+pytest==7.4.3
+pytest-django==4.7.0
+pytest-cov==4.1.0
